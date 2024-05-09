@@ -1,13 +1,21 @@
+
 html {
     margin: 20px;
-    padding: 10px;
+    padding: 0px;
 }
 
 body {
-    font-family: helvetica, arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     background-color: white;
     color:black;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.text-container {
+    max-width: 400px; /* Adjust the value as needed */
+    margin: 20 auto; /* This centers the text container */
 }
 
 a:link {
