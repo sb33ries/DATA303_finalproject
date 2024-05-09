@@ -5,19 +5,16 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*text-align: justify;*/
     background-color: white;
-    color:black;
-    margin-left: 100px;
-    margin-right: 100px;
+    color: black;
 }
 
-.text-container {
-    max-width: 400px; /* Adjust the value as needed */
-    margin: 20 auto; /* This centers the text container */
+.text-content {
+    margin-left: 250px;
+    margin-right: 250px;
 }
-
 a:link {
     font-weight: bold;
     color:cyan;
