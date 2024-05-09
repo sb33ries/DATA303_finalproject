@@ -1,10 +1,10 @@
 html {
     margin: 20px;
-    padding: 0px;
+    padding: 10px;
 }
 
 body {
-    font-family: Arial;
+    font-family: helvetica, arial, sans-serif;
     text-align: justify;
     background-color: white;
     color:black;
@@ -37,3 +37,4 @@ a:visited {
 .auto {
     text-justify: auto;
   }
+
