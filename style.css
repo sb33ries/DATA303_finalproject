@@ -14,7 +14,11 @@ body {
 .text-content {
     margin-left: 270px;
     margin-right: 250px;
+    line-height: 1.7;
+    font-size: 18px;
+    color: rgb(57, 56, 56);
 }
+
 a:link {
     font-weight: bold;
     color:cyan;
@@ -38,8 +42,3 @@ a:visited {
     margin-right: auto;
     font-size: smaller;
 }
-
-.auto {
-    text-justify: auto;
-  }
-
