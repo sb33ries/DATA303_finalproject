@@ -19,7 +19,14 @@ body {
     cursor: pointer;
   }
   .dark-mode {
-    background-color: #222;
+    background-color: #3e4140;
     color: #fff;
   }
   
+  .dark-mode .text-content b {
+    color: #fff; /* Change color of bold text */
+  }
+  
+  .dark-mode .text-content p {
+    color: #fff; /* Change color of paragraphs */
+  }
