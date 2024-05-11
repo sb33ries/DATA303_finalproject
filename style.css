@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /*text-align: justify;*/
     background-color: white;
     color: black;
@@ -16,7 +16,7 @@ body {
     margin-right: 250px;
     line-height: 1.7;
     font-size: 18px;
-    color: rgb(57, 56, 56);
+    color: rgb(41, 40, 40);
 }
 
 a:link {
