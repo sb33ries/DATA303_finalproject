@@ -20,9 +20,48 @@
 <b><center style="font-size: 24px;margin-bottom:50px">Causes of Death and Life Expectancy Summary</center></b>
 <div class="text-content"><b>Introduction</b></div>
 <div class="text-content">
-    <p>For our midterm project, we will analyze the leading causes of death and life expectancy worldwide. These causes include those related to diseases, violence, mental health, and environmental factors. The data we will be using are publicly available from Our World in Data. The annual number of deaths by cause csv file can be found at <a href="https://ourworldindata.org/causes-of-death">https://ourworldindata.org/causes-of-death</a> and the life expectancy csv file can be found at <a href="https://ourworldindata.org/life-expectancy">https://ourworldindata.org/life-expectancy</a>. </p>
     <p>Understanding mortality rates and causes of death has been an ongoing topic of research. They provide valuable information about the health of a population, potential health risks, and concerning trends. By analyzing mortality data, the public health systems and the government can provide resources and strategies to combat leading causes of death, such as increasing accessibility to blood pressure medication to reduce cardiovascular disease. Additionally, studying trends in mortality rates across demographics can reveal health disparities. By identifying these inequalities, healthcare authorities and policymakers can provide targeted resources to groups in need for a more equitable distribution of healthcare resources.</p>
-    <p>We chose to understand trends in mortality rates because of our group’s interdisciplinary interests in biochemistry, medicine, and data science. Through this project, we hope to provide additional insights into mortality trends over time, geographic space, and between causes of death. Understanding these risks will potentially help others adopt healthier lifestyles and make more informed decisions. We also hope to apply concepts and develop skills we learn in class, as well as collaboratively find an answer to the set of open questions listed below in our Goals section. </p>
+    <p>We chose to understand trends in mortality rates because of our group’s interdisciplinary interests in biochemistry, medicine, and data science. Through this project, we hope to provide additional insights into mortality trends over time, geographic space, and between causes of death. Understanding these risks will potentially help others adopt healthier lifestyles and make more informed decisions. We also hope to apply concepts and develop skills we learn in class, as well as collaboratively find an answer to the set of open questions listed below in our Questions section. </p>
+    <p>For our midterm project, we will analyze the leading causes of death and life expectancy worldwide. These causes include those related to diseases, violence, mental health, and environmental factors. The data we will be using are publicly available from Our World in Data. The annual number of deaths by cause csv file can be found at <a href="https://ourworldindata.org/causes-of-death">https://ourworldindata.org/causes-of-death</a> and the life expectancy csv file can be found at <a href="https://ourworldindata.org/life-expectancy">https://ourworldindata.org/life-expectancy</a>. </p>
+</div>
+<div class="text-content"><b>Questions</b></div>
+<div class="text-content">
+    <ul>
+        <li>How do the leading causes of death change in terms of different regions around the world?</li>
+        <li>How have the causes of death changed over time in specific regions as societies, population, technology, and the environment evolved?</li>
+        <li>Are specific causes of death related/dependent/connected to one another?</li>
+        <li>Is there a correlation between life expectancy and prevailing causes of mortality (i.e., are certain causes of death more fatal)?</li>
+      </ul>
+</div>
+<div class="text-content"><b>Data Summary</b></div>
+<div class="text-content">
+    <p>We will be using a diverse set of Python libraries in order to complete our analysis, this includes but is not limited to: NumPy, Matplotlib, pandas, scikit-learn, and seaborn.
+        The annual number of deaths data consists of 35 columns: 
+    </p>
+    <b>
+        <div style="text-align: center; margin-left: 0px;">
+            <iframe src="df_head.html" style="transform: scale(1); transform-origin: top;" height="450" width="850" frameBorder="0"></iframe>
+        </div>
+    </b>
+    <ul>
+        <li><strong>Code:</strong> Three-letter abbreviation for each country</li>
+        <li><strong>Year:</strong> Data for each country is reported annually from 1990 to 2019</li>
+        <li><strong>Deaths of various causes:</strong> The dataset includes information on various causes of death such as meningitis, Alzheimer’s disease and other dementias, Parkinson’s disease, nutritional deficiencies, malaria, drowning, interpersonal violence, maternal disorders, HIV/AIDS, drug use disorders, tuberculosis, cardiovascular diseases, lower respiratory infections, neonatal disorders, alcohol use disorders, self-harm, exposure to forces of nature, diarrheal diseases, environmental heat and cold exposure, neoplasms, conflict and terrorism, diabetes mellitus, chronic kidney disease, poisonings, protein-energy malnutrition, road injuries, chronic respiratory diseases, cirrhosis and other chronic liver diseases, digestive diseases, fire, heat, and hot substances, acute hepatitis, and measles.</li>
+    </ul>
+    <p>The life expectancy data consists of four columns: </p>
+    <ul>
+        <li><strong>Entity:</strong> Country or region</li>
+        <li><strong>Code:</strong> Three-letter abbreviation for each country</li>
+        <li><strong>Year:</strong> Data for each country is reported annually from 1950 to 2017</li>
+        <li><strong>Life expectancy:</strong> Period life expectancy at birth</li>
+    </ul>
+    <p>For our project, missing data presents a great threat to the credibility of our analyses of mortality rates and life expectancy findings. Data for certain years, countries, and causes, if left blank, can disrupt trends and result in misinterpretations. Reasons contributing to missing data can also be diverse, ranging from data collection errors to zero reporting or complete lack of records for certain periods or regions. Additionally, inconsistencies in data precision, such as a variation in significant figures, can further complicate the analysis. </p>
+    <ul>
+        <li><strong>Missing Years:</strong> A lack of data on the death toll in certain years can result in breaks in trends and hinder our ability to analyze long-term changes in mortality and longevity. For instance, if there are missing years within the dataset, it may be challenging to accurately assess the progression of health outcomes over time.</li>
+        <li><strong>Missing countries:</strong> Incomplete data on specific countries with larger populations or unique mortality patterns could introduce potential biases in our analyses.</li>
+        <li><strong>Missing causes of death:</strong> Certain causes of death being unrecorded can throw off our understanding of mortality rates. For instance, if data about new diseases or health issues are missing, it will be difficult for us to grasp their full impact on the death rate overall.</li>
+    </ul>
+      
 </div>
 <p style="font-weight: bold; font-size: 32px;"><center>Africa Map</center></p>
 <b>
