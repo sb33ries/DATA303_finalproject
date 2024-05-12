@@ -84,11 +84,7 @@
     <p>We will be using a diverse set of Python libraries in order to complete our analysis, this includes but is not limited to: NumPy, Matplotlib, pandas, scikit-learn, and seaborn.
         The annual number of deaths data consists of 35 columns: (might remove below btw)
     </p>
-    <b>
-        <div style="text-align: center; margin-left: 0px;">
-            <iframe src="df_head.html" style="transform: scale(1); transform-origin: top;" height="450" width="850" frameBorder="0"></iframe>
-        </div>
-    </b>
+
     <ul>
         <li><strong>Code:</strong> Three-letter abbreviation for each country</li>
         <li><strong>Year:</strong> Data for each country is reported annually from 1990 to 2019</li>
@@ -109,7 +105,7 @@
     </ul>
       
 </div>
-<div class="text-content"><b>Most fatal causes of death for a given country.</b></div>
+<div class="text-content"><b>Most fatal causes of death for a given country</b></div>
 <p style="font-weight: bold; font-size: 34px;"><center>Top 5 Leading Causes of Death in Africa (1990-2017 averaged)</center></p>
 <b>
     <div style="text-align: center; margin-left: 0px;">
@@ -127,53 +123,61 @@
     In the case of HIV/AIDS, the primary cause of death in the African region in 2000, South Africa demonstrated the highest prevalence with 162k cases, followed by Kenya and Tanzania with 86k and 82k cases, respectively. Conversely, Cardiovascular disease highlights Egypt as its highest overall prevalence among all the mentioned diseases, with 199k cases, then Nigeria with 139k cases. It is worth noting that Heart disease has maintained its status as the leading cause of death globally since 2019 (GBD 2021), which explains the high prevalence of Cardiovascular disease throughout the African region in the visualization.
   </p>
 </div>
+<br>
 
-
+<div class="text-content"><b>Correlations within the data</b></div>
+<br>
 <p class="text-content"><center>Correlation Matrix</center></p>
 <b>
     <div style="text-align: center; margin-bottom: -180px;">
         <iframe src="heatmap.html" style="transform: scale(0.75); transform-origin: top;" height="820" width="1100" frameBorder="0"></iframe>
     </div>
 </b>
-<p class="text-content;margin-bottom: -10px;"><center>tSNE (make font bigger)</center></p>
-<img src="tSNE_plot.png"  style="width: 1000px; height: auto; display: block; margin-left: 270px;margin-bottom:30px">
+<div class="text-content">
+  <p>
+    <strong>Figure X.</strong>  The choropleth map of Africa depicts the prevalence of the top five leading causes of death, as identified by the World Health Organization, averaged from 1990 to 2019. 
+  </p>
+</div>
+
+<p class="text-content;margin-bottom: -10px;"><center>tSNE (is font big enough?)</center></p>
+<img src="tSNE_plot.png"  style="width: 1000px; height: auto; display: block; margin-left: 200px;margin-bottom:30px">
 <p class="text-content;margin-bottom: -10px;"><center>more tSNE</center></p>
 <b>
-  <div style="text-align: left;margin-left: 290px; margin-bottom: -180px;">
-      <iframe src="tSNE_p15_y2000.html" style="transform: scale(1); transform-origin: top;" height="820" width="1000" frameBorder="0"></iframe>
+  <div style="text-align: center;margin-left: 200px; margin-bottom: -180px;">
+      <iframe src="tSNE_p15_y2000.html" style="transform: scale(0.85); transform-origin: top;" height="820" width="1000" frameBorder="0"></iframe>
   </div>
 </b>
 
 <p class="text-content;margin-bottom: -10px;"><center>more tSNE</center></p>
 <b>
-  <div style="text-align: left;margin-left: 290px; margin-bottom: -180px;">
-      <iframe src="tSNE_all.html" style="transform: scale(1); transform-origin: top;" height="820" width="1000" frameBorder="0"></iframe>
+  <div style="text-align: center;margin-left: 200px; margin-bottom: -180px;">
+      <iframe src="tSNE_all.html" style="transform: scale(0.9); transform-origin: top;" height="820" width="1000" frameBorder="0"></iframe>
   </div>
 </b>
 
 <p class="text-content;margin-bottom: -10px;"><center>Number of Deaths by Neonatal Disorders by Country</center></p>
 <b>
-    <div style="text-align: center; margin-left: 280px;">
-        <iframe src="neonatal_by_country.html" style="transform: scale(1); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
+    <div style="text-align: center; margin-left: 230px;">
+        <iframe src="neonatal_by_country.html" style="transform: scale(0.9); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
     </div>
 </b>
 <p class="text-content"><center>Number of Deaths by Neonatal and other dementias across Income</center></p>
 <b>
     <div style="text-align: center; margin-left: 300px;">
-        <iframe src="neonatal_across_income.html" style="transform: scale(1); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
+        <iframe src="neonatal_across_income.html" style="transform: scale(0.9); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
     </div>
 </b>
 
 <p class="text-content;margin-bottom: -10px;"><center>Number of Deaths by Alzheimer’s by Country</center></p>
 <b>
-    <div style="text-align: center; margin-left: 280px;">
-        <iframe src="alzheimers_by_country_timeline.html" style="transform: scale(1); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
+    <div style="text-align: center; margin-left: 230px;">
+        <iframe src="alzheimers_by_country_timeline.html" style="transform: scale(0.9); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
     </div>
 </b>
 <p class="text-content"><center>Number of Deaths by Alzheimer’s and other dementias across Income</center></p>
 <b>
     <div style="text-align: center; margin-left: 300px;">
-        <iframe src="alzheimers_across_income.html" style="transform: scale(1); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
+        <iframe src="alzheimers_across_income.html" style="transform: scale(0.9); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
     </div>
 </b>
 
