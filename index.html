@@ -135,18 +135,40 @@
 </b>
 <div class="text-content">
   <p>
-    <strong>Figure X.</strong>  The choropleth map of Africa depicts the prevalence of the top five leading causes of death, as identified by the World Health Organization, averaged from 1990 to 2019. 
+    <strong>Figure X.</strong>  Correlation matrix of all natural causes of deaths. Disorders and malnutrition were omitted from the data. Correlation coefficients close to 1 or -1 indicate high correlations between variables.
+  </p>
+  <p>
+    A correlation matrix was created to analyze correlation between different variables in our data. Due to the large size of our dataset, we only considered natural causes of deaths and omitted data that were due to unnatural causes (e.g. poisonings or drownings), disorders, and malnutrition. 
+From our correlation matrix, it is evident that many of our variables are correlated by having correlation coefficients close to 1.00. This is expected because natural causes of death tend to have shared underlying conditions. For example, individuals with diabetes mellitus are at higher risk for cardiovascular disease, stroke, and chronic kidney diseases. Additionally, shared risk factors can increase the risk of multiple causes of death at once. For example, smoking increases risk for both respiratory and cardiovascular disease.
+
   </p>
 </div>
-
-<p class="text-content;margin-bottom: -10px;"><center>tSNE (is font big enough?)</center></p>
+<br style="height: 60px;">
+<p class="text-content;margin-bottom: -10px;"><center>t-SNE of All Causes of Death in the Year of 2000</center></p>
 <img src="tSNE_plot.png"  style="width: 1000px; height: auto; display: block; margin-left: 200px;margin-bottom:30px">
-<p class="text-content;margin-bottom: -10px;"><center>more tSNE</center></p>
-<b>
-  <div style="text-align: center;margin-left: 200px; margin-bottom: -180px;">
-      <iframe src="tSNE_p15_y2000.html" style="transform: scale(0.85); transform-origin: top;" height="820" width="1000" frameBorder="0"></iframe>
-  </div>
-</b>
+<div class="text-content">
+  <p>
+    <strong>Figure X.</strong> t-SNE analysis of all causes of death in the year of 2000. Perplexities values of 2, 15, 50, 75, 100, and 150 were used.
+  </p>
+  <p>
+    A t-SNE was performed on all of the data in the year of 2000. This year was chosen arbritrially as other years had a similar result. The figure above shows that the t-SNE showed no clear groupings between the causes of death. This is interesting because it went against what we found in our correlation matrix. We will look at the plot with plerplexity of 15 further down below.
+  </p>
+</div>
+<br style="height: 60px;">
+<p class="text-content;margin-bottom: 0px;"><center>t-SNE (Perplexity = 15) for All Causes of Death in the Year 2000</center></p>
+
+<div style="text-align: center; margin-left: 195px; margin-bottom: -150px;">
+  <iframe src="tSNE_p15_y2000.html" style="transform: scale(0.8); transform-origin: top;" height="620" width="1000" frameBorder="0"></iframe>
+</div>
+
+<div class="text-content">
+  <p>
+      <strong>Figure X.</strong> t-SNE analysis of all causes of death in the year of 2000 with perplexity of 15.
+  </p>
+  <p>
+    After choosing a perplexity of 15, it is clear the the causes of death had no clear groupings.
+  </p>
+</div>
 
 <p class="text-content;margin-bottom: -10px;"><center>more tSNE</center></p>
 <b>
