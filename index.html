@@ -4,14 +4,60 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="scrollbar.css">
 <link rel="stylesheet" href="light_dark.css">
-<h1><center>DATA 303 Final Project</center></h1>
-<b>
-    <div class="container">
-      <center><button class="button" onclick="toggleMode()">Switch Theme</button></center>
-    </div>
-  
-    <script src="light_dark.js"></script>
-</b>
+<style>
+    body {
+      transition: background-color 0.3s ease;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .dark-mode {
+      background-color: #3e4140;
+      color: #fff;
+    }
+
+    .dark-mode ul,
+    .dark-mode ul li {
+      color: #e2e2e2;
+    }
+
+    .dark-mode .text-content b {
+      color: #e2e2e2; /* Change color of bold text */
+    }
+
+    .dark-mode .text-content p {
+      color: #e2e2e2; /* Change color of paragraphs */
+    }
+  </style>
+</head>
+<body>
+  <h1><center>DATA 303 Final Project</center></h1>
+
+  <div class="container">
+    <center><button class="button" onclick="toggleMode()">Switch Theme</button></center>
+  </div>
+
+  <script>
+    function toggleMode() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
 <br style="margin-bottom: 10px;">
 <img src="header_pic.png"  style="width: 800px; height: auto; display: block; margin: 0 auto;margin-bottom:30px">
 <b><center>Blair Bussells, Justine Chu, Lea Corticchiato, Shinjer Li</center></b>
