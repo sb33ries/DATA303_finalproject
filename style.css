@@ -20,13 +20,13 @@ body {
 }
 
 a:link {
-    font-weight: bold;
-    color:cyan;
+    font-weight: normal;
+    color:rgb(70, 112, 166);
 }
 
 a:visited {
-    font-weight: bold;
-    color:fuchsia;
+    font-weight: normal;
+    color:rgb(70, 112, 166);
 }
 
 .img-centered {
@@ -41,4 +41,12 @@ a:visited {
     margin-left: auto; 
     margin-right: auto;
     font-size: smaller;
+}
+
+ul {
+    color: rgb(41, 40, 40);
+}
+
+ul li {
+    color: rgb(41, 40, 40);
 }

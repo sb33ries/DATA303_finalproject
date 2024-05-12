@@ -15,10 +15,15 @@ body {
     color: #fff;
   }
   
+  .dark-mode ul,
+  .dark-mode ul li {
+    color: #e2e2e2;
+}
+
   .dark-mode .text-content b {
-    color: #fff; /* Change color of bold text */
+    color: #e2e2e2; /* Change color of bold text */
   }
   
   .dark-mode .text-content p {
-    color: #fff; /* Change color of paragraphs */
+    color: #e2e2e2; /* Change color of paragraphs */
   }
