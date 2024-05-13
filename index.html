@@ -67,7 +67,8 @@
     padding: 10px;
     border: 1px solid #ddd;
     display: none; /* Initially hide the TOC */
-  }
+    z-index: 1001; /* Higher value to ensure it's above everything */
+}
 
   #toc a {
     display: block;
@@ -207,13 +208,13 @@
 
 <div class="text-content"id="section4"><b>I. World Trends</b></div>
 <p class="text-content;margin-bottom: -10px;"><center>World Map Cause of Death 1990</center></p>
-</body>
+
 <b>
     <div style="text-align: left; margin-left: 60px; margin-bottom: -100px">
         <iframe src="world_map_death_causes_1990.html" style="transform: scale(1); transform-origin: top;" height="700" width="1180" frameBorder="0"></iframe>
     </div>
 </b>
-<body>
+
 <div class="text-content">
   <p>
     <strong>Figure 1.</strong> A world choropleth map depicting the number of deaths (per 10,000 people) in 1990 for thirty-two different causes. This data is presented for each of the World Health Organization's six regions. 
