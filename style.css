@@ -12,7 +12,7 @@ body {
 }
 
 .text-content {
-    margin-left: 270px;
+    margin-left: 265px;
     margin-right: 250px;
     line-height: 1.7;
     font-size: 18px;
@@ -43,10 +43,3 @@ a:visited {
     font-size: smaller;
 }
 
-ul {
-    color: rgb(41, 40, 40);
-}
-
-ul li {
-    color: rgb(41, 40, 40);
-}
