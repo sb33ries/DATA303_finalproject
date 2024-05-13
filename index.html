@@ -68,7 +68,7 @@
 <div class="text-content">
     <p>Understanding mortality rates and causes of death has been an ongoing topic of research. They provide valuable information about the health of a population, potential health risks, and concerning trends. By analyzing mortality data, the public health systems and the government can provide resources and strategies to combat leading causes of death, such as increasing accessibility to blood pressure medication to reduce cardiovascular disease. Additionally, studying trends in mortality rates across demographics can reveal health disparities. By identifying these inequalities, healthcare authorities and policymakers can provide targeted resources to groups in need for a more equitable distribution of healthcare resources.</p>
     <p>We chose to understand trends in mortality rates because of our group’s interdisciplinary interests in biochemistry, medicine, and data science. Through this project, we hope to provide additional insights into mortality trends over time, geographic space, and between causes of death. Understanding these risks will potentially help others adopt healthier lifestyles and make more informed decisions. We also hope to apply concepts and develop skills we learn in class, as well as collaboratively find an answer to the set of open questions listed below in our Questions section. </p>
-    <p>For our midterm project, we will analyze the leading causes of death and life expectancy worldwide. These causes include those related to diseases, violence, mental health, and environmental factors. The data we will be using are publicly available from Our World in Data. The annual number of deaths by cause csv file can be found at <a href="https://ourworldindata.org/causes-of-death">https://ourworldindata.org/causes-of-death</a> and the life expectancy csv file can be found at <a href="https://ourworldindata.org/life-expectancy">https://ourworldindata.org/life-expectancy</a>. </p>
+    <p>For our final project, we will analyze the leading causes of death, life expectancy, and population worldwide. These causes include those related to diseases, violence, mental health, and environmental factors. The data we will be using are publicly available from Our World in Data. The annual number of deaths by cause csv file can be found at <a href="https://ourworldindata.org/causes-of-death">https://ourworldindata.org/causes-of-death</a>, the life expectancy csv file can be found at <a href="https://ourworldindata.org/life-expectancy">https://ourworldindata.org/life-expectancy</a>, and the population and demography data can be found at <a href="https://ourworldindata.org/explorers/population-and-demography">https://ourworldindata.org/explorers/population-and-demography.</a> </p>
 </div>
 <div class="text-content"><b>Questions</b></div>
 <div class="text-content">
@@ -81,8 +81,10 @@
 </div>
 <div class="text-content"><b>Data Summary</b></div>
 <div class="text-content">
-    <p>We will be using a diverse set of Python libraries in order to complete our analysis, this includes but is not limited to: NumPy, Matplotlib, pandas, scikit-learn, and seaborn.
-        The annual number of deaths data consists of 35 columns: (might remove below btw)
+    <p>We will be using a diverse set of Python libraries in order to complete our analysis, this includes but is not limited to: NumPy, Plotly, Matplotlib, pandas, scikit-learn, and seaborn.
+    </p>
+    <p>
+      The annual number of deaths data consists of 35 columns:
     </p>
 
     <ul>
@@ -97,6 +99,14 @@
         <li><strong>Year:</strong> Data for each country is reported annually from 1950 to 2017</li>
         <li><strong>Life expectancy:</strong> Period life expectancy at birth</li>
     </ul>
+    <p>
+      The population and demography data consists of 40 columns, but we only used the first three:
+    </p>
+    <ul>
+      <li><strong>Country Name:</strong> Country or region</li>
+      <li><strong>Year:</strong> Data for each country is reported annually from 1950 to 2021</li>
+      <li><strong>Population:</strong> Number of people living the country or region</li>
+  </ul>
     <p>For our project, missing data presents a great threat to the credibility of our analyses of mortality rates and life expectancy findings. Data for certain years, countries, and causes, if left blank, can disrupt trends and result in misinterpretations. Reasons contributing to missing data can also be diverse, ranging from data collection errors to zero reporting or complete lack of records for certain periods or regions. Additionally, inconsistencies in data precision, such as a variation in significant figures, can further complicate the analysis. </p>
     <ul>
         <li><strong>Missing Years:</strong> A lack of data on the death toll in certain years can result in breaks in trends and hinder our ability to analyze long-term changes in mortality and longevity. For instance, if there are missing years within the dataset, it may be challenging to accurately assess the progression of health outcomes over time.</li>
