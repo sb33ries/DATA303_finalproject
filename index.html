@@ -204,7 +204,25 @@
     </ul>
       
 </div>
-<div class="text-content"id="section4"><b>I. Most fatal causes of death for a given country</b></div>
+
+<div class="text-content"id="section4"><b>I. World Trends</b></div>
+<p class="text-content;margin-bottom: -10px;"><center>World Map Cause of Death 2019</center></p>
+<b>
+    <div style="text-align: left; margin-left: 60px; margin-bottom: -200px">
+        <iframe src="world_map_death_causes_2019.html" style="transform: scale(0.75); transform-origin: top;" height="700" width="1180" frameBorder="0"></iframe>
+    </div>
+</b>
+
+<p class="text-content;margin-bottom: -10px;"><center>Income</center></p>
+<b>
+    <div style="text-align: center; margin-left: 200 px;">
+        <iframe src="Income.html" style="transform: scale(0.85); transform-origin: top;" height="700" width="1050" frameBorder="0"></iframe>
+    </div>
+</b>
+
+
+
+<div class="text-content"id="section5"><b>II. Trends Within a Country</b></div>
 <p style="font-weight: bold; font-size: 34px;"><center>Top 5 Leading Causes of Death in Africa (1990-2017 averaged)</center></p>
 <b>
     <div style="text-align: center; margin-left: 0px;">
@@ -213,7 +231,7 @@
 </b>
 <div class="text-content">
   <p>
-    <strong>Figure X.</strong>  The choropleth map of Africa depicts the prevalence of the top five leading causes of death, as identified by the World Health Organization, averaged from 1990 to 2019. 
+    <strong>Figure 3.</strong>  The choropleth map of Africa depicts the prevalence of the top five leading causes of death, as identified by the World Health Organization, averaged from 1990 to 2019. 
   </p>
   <p>
     Beginning with Neonatal disorders, the primary cause of death in the African region in 2019, we note the most significant prevalence in Egypt, where these disorders accounted for 199k cases. Nigeria follows closely with 139k cases, then Morocco with 85k cases of neonatal conditions. Lower respiratory infections and Diarrheal diseases also highlights Nigeria, but includes Ethiopia and The Republic of the Congo as the three countries with the highest prevalence, albeit with varying numbers. This correlation is not incidental, likely stemming from the interplay of these diseases as comorbidities. For example, individuals afflicted with neonatal disorders at birth are more susceptible to developing lower respiratory infections and diarrheal diseases later in life. However, this pattern does not extend to HIV/AIDS and Cardiovascular disease, which exhibit a distinct distribution of prevalence across the African countries. 
@@ -224,7 +242,7 @@
 </div>
 <br>
 
-<div class="text-content"id="section5"><b>Correlations within the data</b></div>
+<div class="text-content"id="section6"><b>III. Correlations Within the Data</b></div>
 <br>
 <p class="text-content"><center>Correlation Matrix</center></p>
 <b>
@@ -234,7 +252,7 @@
 </b>
 <div class="text-content">
   <p>
-    <strong>Figure X.</strong>  Correlation matrix of all natural causes of deaths. Disorders and malnutrition were omitted from the data. Correlation coefficients close to 1 or -1 indicate high correlations between variables.
+    <strong>Figure 4.</strong>  Correlation matrix of all natural causes of deaths. Disorders and malnutrition were omitted from the data. Correlation coefficients close to 1 or -1 indicate high correlations between variables.
   </p>
   <p>
     A correlation matrix was created to analyze correlation between different variables in our data. Due to the large size of our dataset, we only considered natural causes of deaths and omitted data that were due to unnatural causes (e.g. poisonings or drownings), disorders, and malnutrition. 
@@ -247,7 +265,7 @@ From our correlation matrix, it is evident that many of our variables are correl
 <img src="tSNE_plot.png"  style="width: 1000px; height: auto; display: block; margin-left: 200px;margin-bottom:30px">
 <div class="text-content">
   <p>
-    <strong>Figure X.</strong> t-SNE analysis of all causes of death in the year of 2000. Perplexities values of 2, 15, 50, 75, 100, and 150 were used.
+    <strong>Figure 5.</strong> t-SNE analysis of all causes of death in the year of 2000. Perplexities values of 2, 15, 50, 75, 100, and 150 were used.
   </p>
   <p>
     A t-SNE was performed on all of the data in the year of 2000. This year was chosen arbritrially as other years had a similar result. The figure above shows that the t-SNE showed no clear groupings between the causes of death. This is interesting because it went against what we found in our correlation matrix. We will look at the plot with plerplexity of 15 further down below.
@@ -262,60 +280,102 @@ From our correlation matrix, it is evident that many of our variables are correl
 
 <div class="text-content">
   <p>
-      <strong>Figure X.</strong> t-SNE analysis of all causes of death in the year of 2000 with perplexity of 15.
+      <strong>Figure 6.</strong> t-SNE analysis of all causes of death in the year of 2000 with perplexity of 15.
   </p>
   <p>
     After choosing a perplexity of 15, it is clear the the causes of death had no clear groupings.
   </p>
 </div>
 
-<p class="text-content;margin-bottom: -10px;"><center>more tSNE</center></p>
+<p class="text-content;margin-bottom: -150px;"><center>more tSNE</center></p>
 <b>
-  <div style="text-align: center;margin-left: 200px; margin-bottom: -180px;">
+  <div style="text-align: center;margin-left: 200px; margin-bottom: -290px;">
       <iframe src="tSNE_all.html" style="transform: scale(0.9); transform-origin: top;" height="820" width="1000" frameBorder="0"></iframe>
   </div>
 </b>
+<div class="text-content">
+  <p>
+      <strong>Figure 7.</strong> tSNE of all. Caption goes here.
+  </p>
+  <p>
+    There is not a clear relationship between various countries.
+  </p>
+  <br>
+  <br>
+</div>
 
-<p class="text-content;margin-bottom: -10px;"><center>Number of Deaths by Neonatal Disorders by Country</center></p>
+
+
+
+<div class="text-content"id="section7"><b>IV. A Deeper Dive</b></div>
+<div class="text-content">
+  <p>
+    Looking at the correlation matrix between each cause of death and life expectancy, we noticed that neonatal disorders had the strongest correlation to life expectancy, with a Pearson’s r correlation coefficient of -0.866099. This suggests a strong negative relationship between neonatal disorders and life expectancy. Neonatal disorders are symptoms that deviate from the normal state of body, organs and abnormal function of a newborn. 
+  </p>
+</div>
 <b>
-    <div style="text-align: center; margin-left: 230px;">
+    <div style="text-align: center; margin-left: 230px; margin-bottom: -150px">
         <iframe src="neonatal_by_country.html" style="transform: scale(0.9); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
     </div>
 </b>
-<p class="text-content"><center>Number of Deaths by Neonatal and other dementias across Income</center></p>
+<div class="text-content">
+  <p>
+      <strong>Figure 8.</strong> Scatterplot of number of deaths per population of 10,000 caused by neonatal disorders versus life expectancy. Each point represents a country and the slider shows data by year from 1990 to 2019. 
+  </p>
+  <p>
+    By comparing the number of deaths caused by neonatal disorders and life expectancy over time, we observe a pattern in overall increased life expectancy and decreased number of deaths caused by neonatal disorders. Additionally, the strong negative relationship between the number of deaths caused by neonatal disorders and life expectancy is observed across all years from 1990 to 2019. Considering that neonatal disorders affect infants, a lower life expectancy could be expected in those with a neonatal disorder. Two data points that appear to be outliers are Rwanda in 1994 and South Sudan in 1998. In both of these data points, the number of neonatal disorder deaths is lower than would be predicted for countries with such a life expectancy. Regarding Rwanda, this can likely be attributed to the Rwandan genocide in 1994 (Encyclopedia Britannica, 2016). This observation in South Sudan can likely be attributed to a famine in 1998 caused by civil war and human rights abuses (Human Rights Watch, 2014). 
+  </p>
+</div>
+
+
 <b>
-    <div style="text-align: center; margin-left: 300px;">
+    <div style="text-align: center; margin-left: 300px;margin-bottom: -140px">
         <iframe src="neonatal_across_income.html" style="transform: scale(0.9); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
     </div>
 </b>
+<div class="text-content">
+  <p>
+      <strong>Figure 9.</strong> Box and strip plot of number of deaths per population of 10,000 caused by neonatal disorders across country classification by income level. Each point represents a year from 1990 to 2019.
+  </p>
+  <p>
+    A further look into the number of deaths caused by neonatal disorders across countries classified by income level shows that there is a negative correlation between number of neonatal disorder deaths and income level. Country classification by income level is evaluated by the World Bank and is determined by the gross national income (in USD) of the previous year. Higher income. Individual country classifications for each year from 1990 to 2019 can be found at <a href="https://datatopics.worldbank.org/world-development-indicators/the-world-by-income-and-region.html">World Bank Income and Region Data</a>.
+  </p>
+  <p>
+    The highest positive correlation between each cause of death and life expectancy was for Alzheimer’s disease and other dementias, with a Pearson’s r correlation coefficient of 0.642415. Dementia describes a group of symptoms associated with a decline in memory, reasoning or other thinking skills, and Alzheimer’s disease, a degenerative brain disease caused by complex brain changes following cell damage, is the most common cause of dementia (Alzheimer’s Association, 2019). 
+  </p>
+</div>
 
-<p class="text-content;margin-bottom: -10px;"><center>Number of Deaths by Alzheimer’s by Country</center></p>
 <b>
-    <div style="text-align: center; margin-left: 230px;">
+    <div style="text-align: center; margin-left: 230px;margin-bottom: -160px">
         <iframe src="alzheimers_by_country_timeline.html" style="transform: scale(0.9); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
     </div>
 </b>
+<div class="text-content">
+  <p>
+      <strong>Figure 10.</strong> Scatterplot of number of deaths per population of 10,000 caused by Alzheimer’s disease and other dementias versus life expectancy. Each point represents a country and the slider shows data by year from 1990 to 2019. 
+  </p>
+  <p>
+    An overall increase in life expectancy across countries over time is also associated with an increase in the number of deaths caused by Alzheimer’s disease and other dementias. A country that had consistently high rates of deaths due to Alzheimer’s disease and other dementias relative to other countries in the world was Japan. Japan also has a relatively high life expectancy, as expected, but appears to be an outlier as the number of Alzheimer’s disease and dementia deaths increases rapidly compared to the rate of increasing life expectancy. Since the exact cause of Alzheimer’s disease and a cure are currently unknown, understanding the populations that are affected most by this disease may help in furthering research on the disease.
+  </p>
+</div>
+
 <p class="text-content"><center>Number of Deaths by Alzheimer’s and other dementias across Income</center></p>
 <b>
-    <div style="text-align: center; margin-left: 260px;">
+    <div style="text-align: center; margin-left: 260px;margin-bottom: -140px">
         <iframe src="alzheimers_across_income.html" style="transform: scale(0.9); transform-origin: top;" height="700" width="900" frameBorder="0"></iframe>
     </div>
 </b>
+<div class="text-content">
+  <p>
+      <strong>Figure 11.</strong> Box and strip plot of number of deaths per population of 10,000 caused by Alzheimer’s disease and other dementias across country classification by income level. Each point represents a year from 1990 to 2019.
+  </p>
+  <p>
+    There is also a positive correlation between the number of deaths caused by Alzheimer’s disease and other dementias and country classification by income level. This suggests that life expectancy is positively associated with country income level. Because aging is the most common risk factor for Alzheimer’s disease and other dementias, this positive association makes sense, and it may be beneficial to study Alzheimer’s among younger people in countries with lower income levels and lower life expectancies to gain more insight about early onset of the disease. 
+  </p>
+</div>
 
-<p class="text-content;margin-bottom: -10px;"><center>World Map Cause of Death 2019</center></p>
-<b>
-    <div style="text-align: left; margin-left: 60px; margin-bottom: -200px">
-        <iframe src="world_map_death_causes_2019.html" style="transform: scale(0.75); transform-origin: top;" height="700" width="1180" frameBorder="0"></iframe>
-    </div>
-</b>
-
-<p class="text-content;margin-bottom: -10px;"><center>Income</center></p>
-<b>
-    <div style="text-align: center; margin-left: 10 px;">
-        <iframe src="Income.html" style="transform: scale(0.85); transform-origin: top;" height="700" width="1050" frameBorder="0"></iframe>
-    </div>
-</b>
-
+<div class="text-content"id="section8"><b>Conclusion</b></div>
+<div class="text-content"id="section9"><b>References</b></div>
 
 
 </body>
