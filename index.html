@@ -5,72 +5,153 @@
 <link rel="stylesheet" href="scrollbar.css">
 <link rel="stylesheet" href="light_dark.css">
 <style>
-    body {
-      transition: background-color 0.3s ease;
-    }
+  body {
+    transition: background-color 0.3s ease;
+  }
 
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
 
-    .button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add color transition */
+  }
 
-    .dark-mode {
-      background-color: #3e4140;
-      color: #fff;
-    }
+  .button.dark-mode {
+    background-color: #a64a4a; /* Dark mode button background color */
+    color: #fff; /* Dark mode button text color */
+  }
 
-    .dark-mode ul,
-    .dark-mode ul li {
-      color: #e2e2e2;
-    }
+  .button:hover {
+    background-color: #0056b3;
+  }
 
-    .dark-mode .text-content b {
-      color: #e2e2e2; /* Change color of bold text */
-    }
+  .dark-mode {
+    background-color: #3e4140;
+    color: #fff;
+  }
 
-    .dark-mode .text-content p {
-      color: #e2e2e2; /* Change color of paragraphs */
-    }
-  </style>
+  .dark-mode ul,
+  .dark-mode ul li {
+    color: #e2e2e2;
+  }
+
+  .dark-mode .text-content b {
+    color: #e2e2e2; /* Change color of bold text */
+  }
+
+  .dark-mode .text-content p {
+    color: #e2e2e2; /* Change color of paragraphs */
+  }
+</style>
+<style>
+  /* Style for the table of contents */
+  #toc {
+    position: fixed;
+    top: 50px; /* Adjust this value to your preference */
+    left: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: none; /* Initially hide the TOC */
+  }
+
+  #toc a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  #toc a:hover {
+    background-color: #ddd;
+  }
+
+  #toggleButton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+#toggleButton:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+</style>
 </head>
+</style>
 <body>
   <h1><center>DATA 303 Final Project</center></h1>
 
-  <div class="container">
-    <center><button class="button" onclick="toggleMode()">Switch Theme</button></center>
+  <div>
+    <center><button class="button" onclick="toggleMode()">Light/Dark Mode</button></center>
   </div>
 
   <script>
     function toggleMode() {
       var body = document.body;
+      var button = document.querySelector('.button');
       body.classList.toggle("dark-mode");
+      button.classList.toggle("dark-mode");
+      if (button.classList.contains('dark-mode')) {
+        button.style.backgroundColor = '#333';
+      } else {
+        button.style.backgroundColor = '#007bff';
+      }
     }
   </script>
 </body>
+<button id="toggleButton" onclick="toggleTOC()">See Table of Contents</button>
+<div id="toc">
+  <ul>
+    <li><a href="#section1">Introduction</a></li>
+    <li><a href="#section2">Questions</a></li>
+    <li><a href="#section3">Section 3</a></li>
+  </ul>
+  <script>
+    function toggleTOC() {
+      var toc = document.getElementById("toc");
+      if (toc.style.display === "none") {
+        toc.style.display = "block";
+      } else {
+        toc.style.display = "none";
+      }
+    }
+  </script>
+</div>
 <br style="margin-bottom: 10px;">
 <img src="header_pic.png"  style="width: 800px; height: auto; display: block; margin: 0 auto;margin-bottom:30px">
 <b><center>Blair Bussells, Justine Chu, Lea Corticchiato, Shinjer Li</center></b>
 <p><center>May 13, 2024</center></p>
 <hr style="width: 59%; margin-bottom: 30px">
 <b><center style="font-size: 24px;margin-bottom:50px">Causes of Death and Life Expectancy Summary</center></b>
-<div class="text-content"><b>Introduction</b></div>
+<div class="text-content"id="section1"><b>Introduction</b></div>
 <div class="text-content">
     <p>Understanding mortality rates and causes of death has been an ongoing topic of research. They provide valuable information about the health of a population, potential health risks, and concerning trends. By analyzing mortality data, the public health systems and the government can provide resources and strategies to combat leading causes of death, such as increasing accessibility to blood pressure medication to reduce cardiovascular disease. Additionally, studying trends in mortality rates across demographics can reveal health disparities. By identifying these inequalities, healthcare authorities and policymakers can provide targeted resources to groups in need for a more equitable distribution of healthcare resources.</p>
     <p>We chose to understand trends in mortality rates because of our group’s interdisciplinary interests in biochemistry, medicine, and data science. Through this project, we hope to provide additional insights into mortality trends over time, geographic space, and between causes of death. Understanding these risks will potentially help others adopt healthier lifestyles and make more informed decisions. We also hope to apply concepts and develop skills we learn in class, as well as collaboratively find an answer to the set of open questions listed below in our Questions section. </p>
     <p>For our final project, we will analyze the leading causes of death, life expectancy, and population worldwide. These causes include those related to diseases, violence, mental health, and environmental factors. The data we will be using are publicly available from Our World in Data. The annual number of deaths by cause csv file can be found at <a href="https://ourworldindata.org/causes-of-death">https://ourworldindata.org/causes-of-death</a>, the life expectancy csv file can be found at <a href="https://ourworldindata.org/life-expectancy">https://ourworldindata.org/life-expectancy</a>, and the population and demography data can be found at <a href="https://ourworldindata.org/explorers/population-and-demography">https://ourworldindata.org/explorers/population-and-demography.</a> </p>
 </div>
-<div class="text-content"><b>Questions</b></div>
+<div class="text-content"id="section2"><b>Questions</b></div>
 <div class="text-content">
     <ul>
         <li>How do the leading causes of death change in terms of different regions around the world?</li>
